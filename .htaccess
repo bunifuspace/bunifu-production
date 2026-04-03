@@ -1,0 +1,5 @@
+# Prevent public from browsing folder contents
+Options -Indexes
+
+# Custom 404 page (Optional)
+# ErrorDocument 404 /404.html

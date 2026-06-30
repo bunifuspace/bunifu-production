@@ -9,6 +9,22 @@ body {
   background: #ffff;
 }
 
+.navbar {
+  padding: 12px 10vw;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px) saturate(180%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.navbar img {
+  height: 30px;
+}
+
 .hero {
   display: flex;
   height: 90vh;
@@ -258,6 +274,9 @@ footer p a:hover {
 }
 
 @media (max-width: 678px) {
+  .navbar {
+    padding: 12px 20px;
+  }
   .foundation,
   .creativity-design,
   .share,

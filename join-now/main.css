@@ -30,6 +30,10 @@ body {
 
 .form {
   padding: 20px 10vw;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 .form .who-you-are form {
@@ -58,8 +62,16 @@ body {
   padding: 10px 0 5px 0;
 }
 
+.form .who-you-are .inputs textarea {
+  height: 100px;
+  outline: none;
+  border-color: #ffff;
+  border-bottom: #006edb solid 1px;
+  padding: 12px 0;
+}
+
 .form .who-you-are .inputs input {
-  padding: 0 12px;
+  padding: 12px 0;
   height: 36px;
   outline: none;
   border: none;
@@ -99,5 +111,7 @@ body {
   }
   .form {
     padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }

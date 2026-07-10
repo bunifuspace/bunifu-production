@@ -1,0 +1,241 @@
+:root {
+  --theme-100: rgb(132 173 252);
+  --theme-300: rgb(46 109 231);
+  --theme-500: rgb(47 85 127);
+  --theme-700: rgb(4 19 43);
+  --theme-900: rgb(4 19 43);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.coverpage {
+  background: url(../upload/2026/hWX1749129861106.webp) left/cover;
+  width: 100%;
+  aspect-ratio: 2500/1875;
+  height: auto;
+  position: relative;
+}
+
+.coverpage .navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  color: #ffff;
+  z-index: 999;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, var(--theme-900), transparent);
+}
+
+.coverpage .prayer {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.coverpage .prayer .wrapper {
+  max-width: 450px;
+  color: #ffff;
+  padding: 20px;
+}
+
+.coverpage .prayer .wrapper h2 {
+  font-size: 2.7rem;
+}
+
+.coverpage .prayer .wrapper p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  padding: 10px 0 20px 0;
+}
+
+.coverpage .prayer .wrapper a {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: var(--theme-300);
+  color: #ffff;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.coverpage .prayer .wrapper a:hover {
+  background: var(--theme-500);
+}
+
+.core-values {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 3rem;
+}
+
+.core-values .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.core-values .card .illustration {
+  height: 200px;
+  aspect-ratio: 1/1;
+  border: 3px var(--theme-300) solid;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.core-values .card .illustration.who-we-are {
+  background: url(../upload/2026/core-values-card/z7w1750246121540.avif)
+    center/cover;
+}
+
+.core-values .card .illustration.what-we-believe {
+  background: url(../upload/2026/core-values-card/w6P1750246136021.avif)
+    center/cover;
+}
+
+.core-values .card .illustration.what-we-do {
+  background: url(../upload/2026/core-values-card/YVB1750246155793.avif) 80% /
+    cover;
+}
+
+.core-values .card p {
+  padding: 10px 0 20px 0;
+}
+
+.core-values .card a {
+  padding: 12px 20px;
+  background: var(--theme-300);
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  color: #ffff;
+}
+
+.core-values .card a:hover {
+  background: var(--theme-500);
+}
+
+.core-values .card h2 {
+  font-size: 1.7rem;
+}
+
+.smart-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  padding: 20px;
+  max-width: 1024px;
+  justify-self: center;
+}
+
+.smart-cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: center;
+  aspect-ratio: 340/495;
+  padding: 0 20px 40px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  color: #ffff;
+}
+
+.smart-cards .card.find-a-church {
+  background: url(../upload/2026/smart-cards/wbW1750246183348.avif) center/cover;
+}
+.smart-cards .card.request-prayer {
+  background: url(../upload/2026/smart-cards/fZq1750246224690.avif) center/cover;
+}
+.smart-cards .card.get-answers {
+  background: url(../upload/2026/smart-cards/QWH1750246242141.avif) left / cover;
+}
+
+.shadow-cast {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, var(--theme-900), transparent);
+  z-index: 0;
+}
+
+.smart-cards .card h3 {
+  font-size: 1.8rem;
+  position: relative;
+  z-index: 2;
+}
+
+.smart-cards .card p {
+  padding: 10px 0 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.smart-cards .card a {
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: var(--theme-300);
+  text-decoration: none;
+  color: #ffff;
+  position: relative;
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.smart-cards .card a:hover {
+  background: var(--theme-500);
+}
+
+@media (max-width: 678px) {
+  .coverpage {
+    height: 50vh;
+  }
+  .coverpage .prayer .wrapper p {
+    display: none;
+  }
+  .coverpage .prayer {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .coverpage .prayer .wrapper {
+    padding-bottom: 40px;
+  }
+  .coverpage .prayer .wrapper h2 {
+    font-size: 1.6rem;
+    padding: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .core-values {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .smart-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}

@@ -43,6 +43,9 @@
   font-family: var(--primary-fonts);
 }
 
+body {
+  background: --white: #fff;
+}
 .navbar {
   position: fixed;
   top: 0;

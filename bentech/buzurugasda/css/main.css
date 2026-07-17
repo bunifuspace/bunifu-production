@@ -1,0 +1,546 @@
+:root {
+  --dark-gray: #374151;
+  --soft-gray: #4b5563;
+  --black: #000;
+  --white: #fff;
+  --sda-blue: #00558c;
+  --sda-gold: #c8a13a;
+  --sda-white: #ffffff;
+  --sda-green: #4caf50;
+  --theme-100: rgb(132, 173, 252);
+  --theme-300: rgb(46, 109, 231);
+  --theme-500: rgb(47, 85, 127);
+  --theme-700: rgb(4, 19, 43);
+  --theme-900: rgb(4, 19, 43);
+  --text-11: 0.6875rem;
+  --text-12: 0.75rem;
+  --text-13: 0.8125rem;
+  --text-14: 0.875rem;
+  --text-16: 1rem;
+  --text-20: 1.25rem;
+  --text-23: 1.4375rem;
+  --text-24: 1.5rem;
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-snappy: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-bouncy: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --shadow-sm: 0 1px 2px 0 rgba(4, 19, 43, 0.4);
+  --shadow-md:
+    0 4px 12px -2px rgba(4, 19, 43, 0.5), 0 2px 6px -1px rgba(4, 19, 43, 0.3);
+  --shadow-lg:
+    0 20px 25px -5px rgba(4, 19, 43, 0.6), 0 10px 10px -5px rgba(4, 19, 43, 0.4);
+  --shadow-inset: inset 0 2px 4px 0 rgba(4, 19, 43, 0.6);
+  --shadow-glow-md: 0 0 12px 1px rgba(46, 109, 231, 0.4);
+  --shadow-glow-lg:
+    0 0 24px 4px rgba(132, 173, 252, 0.25), 0 0 12px 1px rgba(46, 109, 231, 0.3);
+  --primary-fonts: "poppin-regular", sans-serif;
+  --secondary-fonts: "Poppins-Light", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-fonts);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--white);
+  padding: 10px 10vw;
+  height: 50px;
+}
+
+main {
+  padding: 50px 0;
+}
+
+p {
+  text-align: justify;
+}
+
+p.tiny {
+  font-size: var(--text-14);
+  color: var(--soft-gray);
+}
+p.quote {
+  font-style: italic;
+}
+
+.coverpage {
+  padding: 20px 10vw;
+  min-height: 678px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.coverpage h1,
+.coverpage h2,
+.coverpage p {
+  max-width: 800px;
+}
+
+.coverpage p.tiny {
+  padding: 0 0 var(--text-12);
+}
+
+.coverpage a {
+  padding: 5px 0 3px 0;
+  text-decoration: none;
+  font-size: var(--text-14);
+  color: var(--theme-500);
+  text-transform: uppercase;
+  border-bottom: var(--theme-500) 1px solid;
+  transition: 0.3s var(--ease-smooth);
+}
+
+.coverpage a:hover {
+  background: var(--theme-500);
+  color: var(--white);
+  padding: 5px 8px 3px 8px;
+}
+
+.coverpage a.last {
+  margin-left: var(--text-20);
+}
+
+.coverpage h1 {
+  text-transform: uppercase;
+  font-size: var(--text-23);
+  color: var(--theme-500);
+}
+
+.coverpage h2 {
+  text-transform: uppercase;
+  font-family: var(--secondary-fonts);
+  font-size: var(--text-14);
+  padding: 0 0 var(--text-12) 0;
+  color: var(--dark-gray);
+}
+
+.worship-schedule {
+  padding: 20px 10vw;
+}
+
+.worship-schedule h2 {
+  text-transform: uppercase;
+  font-size: var(--text-23);
+  color: var(--theme-500);
+}
+.worship-schedule h3 {
+  text-transform: uppercase;
+  font-size: var(--text-16);
+  font-family: var(--secondary-fonts);
+  color: var(--dark-gray);
+}
+
+.worship-schedule p {
+  padding: var(--text-20) 0;
+  font-size: var(--text-14);
+  color: var(--soft-gray);
+}
+
+.worship-schedule .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: var(--text-12);
+}
+
+.worship-schedule .wrapper .card {
+  padding: var(--text-16);
+  border-radius: var(--text-20);
+  border: var(--black) dashed 1px;
+}
+
+.worship-schedule .wrapper .card h3 {
+  font-size: var(--text-16);
+  color: var(--theme-500);
+}
+.worship-schedule .wrapper .card h4 {
+  font-size: var(--text-14);
+  font-family: var(--secondary-fonts);
+  color: var(--dark-gray);
+}
+
+.worship-schedule .wrapper .card ul {
+  list-style: none;
+}
+.worship-schedule .wrapper .card ul li a {
+  text-decoration: none;
+  color: var(--soft-gray);
+  font-size: var(--text-12);
+}
+
+.core {
+  padding: 20px 10vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.core .card {
+  padding: var(--text-12) 0;
+}
+
+.core .card p {
+  font-size: var(--text-13);
+  padding: 6px 0 8px 0;
+  color: var(--soft-gray);
+}
+
+.core h3 {
+  font-size: var(--text-16);
+  text-transform: uppercase;
+  color: var(--theme-500);
+}
+
+.core .card a {
+  font-size: var(--text-14);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--theme-500);
+  color: var(--theme-500);
+  transition: 0.3s var(--ease-smooth);
+}
+
+.core .card a:hover {
+  padding: 4px 12px 5px 8px;
+  background: var(--theme-500);
+  color: var(--white);
+}
+
+.mission {
+  padding: 20px 10vw;
+}
+
+.mission h2 {
+  font-size: var(--text-23);
+  text-transform: uppercase;
+  color: var(--theme-500);
+}
+
+.mission p {
+  font-size: var(--text-14);
+  padding: var(--text-12) 0 var(--text-20) 0;
+  color: var(--soft-gray);
+}
+
+.mission .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.mission .wrapper .card {
+  padding: var(--text-12) 0;
+}
+
+.mission .wrapper .card p {
+  padding: 3px 0 5px 0;
+  max-width: 450px;
+}
+.mission .wrapper .card a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: var(--text-14);
+  color: var(--theme-500);
+  padding-bottom: 3px;
+  border-bottom: 2px solid var(--theme-500);
+  transition: 0.3s var(--ease-smooth);
+}
+
+.mission .wrapper .card a:hover {
+  padding: 8px 12px 5px 8px;
+  background: var(--theme-500);
+  color: var(--white);
+}
+
+.mission .wrapper .card h3 {
+  text-transform: uppercase;
+  font-size: var(--text-16);
+  font-family: var(--secondary-fonts);
+  color: var(--theme-500);
+}
+
+.ministries {
+  padding: 20px 10vw;
+}
+
+.ministries h2 {
+  font-size: var(--text-24);
+  text-transform: uppercase;
+  color: var(--theme-500);
+}
+
+.ministries h3 {
+  font-size: var(--text-16);
+  text-transform: uppercase;
+  font-family: var(--secondary-fonts);
+  color: var(--theme-500);
+}
+
+.ministries p {
+  font-size: var(--text-14);
+  padding: var(--text-12) 0;
+  color: var(--soft-gray);
+}
+
+.ministries ul {
+  list-style: none;
+}
+
+.ministries ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: var(--text-12);
+  color: var(--soft-gray);
+}
+
+.ministries .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project {
+  padding: 20px 10vw;
+}
+
+.project h2 {
+  font-size: var(--text-24);
+  text-transform: uppercase;
+  color: var(--theme-500);
+}
+.project h3 {
+  font-size: var(--text-14);
+  text-transform: uppercase;
+  font-family: var(--secondary-fonts);
+  color: var(--theme-500);
+}
+
+.project p {
+  padding: var(--text-12) 0 0 0;
+  font-size: var(--text-16);
+  color: var(--soft-gray);
+}
+
+.project p.tiny {
+  font-size: var(--text-14);
+}
+
+.project .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: var(--text-20) 0;
+}
+
+.project .wrapper ul {
+  list-style: none;
+}
+
+.project .wrapper ul li a {
+  text-decoration: none;
+  font-size: var(--text-14);
+  color: var(--soft-gray);
+}
+
+.project .btn a {
+  text-decoration: none;
+  color: var(--theme-500);
+  border-bottom: var(--theme-500) 1px solid;
+  padding: 3px 0;
+  transition: 0.3s var(--ease-smooth);
+}
+
+.project .btn a:hover {
+  padding: 8px 12px 5px 8px;
+  background: var(--theme-500);
+  color: var(--white);
+}
+
+.easy {
+  padding: 20px 10vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.easy h2 {
+  font-size: var(--text-16);
+  text-transform: uppercase;
+  color: var(--theme-500);
+}
+
+.easy h3 {
+  font-size: var(--text-14);
+  text-transform: uppercase;
+  color: var(--theme-500);
+}
+
+.easy p {
+  font-size: var(--text-14);
+  padding: 3px 0;
+  color: var(--soft-gray);
+}
+
+.easy a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: var(--text-13);
+  color: var(--theme-500);
+  border-bottom: 1px solid var(--theme-500);
+  transition: 0.3s var(--ease-smooth);
+}
+
+.easy a:hover {
+  padding: 8px 12px 5px 8px;
+  background: var(--theme-500);
+  color: var(--white);
+}
+
+.easy ul {
+  list-style: none;
+}
+
+.easy ul li a {
+  text-decoration: none;
+  font-size: var(--text-14);
+  color: var(--soft-gray);
+  text-transform: none;
+  border-bottom: none;
+  transition: none;
+}
+
+.easy ul li a:hover {
+  padding: 0;
+  background: none;
+  color: var(--soft-gray);
+  border-bottom: 1px solid var(--theme-500);
+}
+
+.advent {
+  padding: 20px 10vw;
+}
+
+.advent h2 {
+  font-size: var(--text-24);
+  text-transform: uppercase;
+  color: var(--theme-500);
+}
+
+.advent p {
+  color: var(--soft-gray);
+  font-size: var(--text-11);
+}
+
+footer {
+  padding: 20px 10vw;
+}
+
+footer h3 {
+  font-size: var(--text-16);
+  text-transform: uppercase;
+  color: var(--theme-500);
+}
+
+footer span {
+  font-size: var(--text-16);
+  color: var(--dark-gray);
+}
+
+footer p {
+  padding: var(--text-20) 0;
+  font-size: var(--text-13);
+  color: var(--soft-gray);
+}
+
+footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+footer .credit {
+  padding: 20px 0;
+}
+
+footer a {
+  font-size: var(--text-12);
+  text-decoration: none;
+  color: var(--soft-gray);
+}
+
+footer h5 {
+  font-size: var(--text-13);
+  text-transform: uppercase;
+  color: var(--theme-500);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer .credit ul li {
+  font-size: var(--text-12);
+}
+
+@media (max-width: 1024px) {
+  .coverpage {
+    min-height: 70vh;
+  }
+  .worship-schedule .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 678px) {
+  .hide-678 {
+    display: none;
+  }
+  .navbar {
+    padding: 10px 20px;
+  }
+  .coverpage {
+    padding: 20px;
+    min-height: 65vh;
+  }
+  .worship-schedule {
+    padding: 20px;
+  }
+  .core {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .mission {
+    padding: 20px;
+  }
+  .mission .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .ministries {
+    padding: 20px;
+  }
+  .project {
+    padding: 20px;
+  }
+  .project .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .easy {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .advent {
+    padding: 20px;
+  }
+  footer {
+    padding: 20px;
+  }
+  footer .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

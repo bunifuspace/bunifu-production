@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "poppin-regular";
+  src: url(poppins/Poppins-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(poppins/Poppins-Light.ttf);
+  font-display: swap;
+}

@@ -20,6 +20,10 @@
   color: var(--color-primary);
 }
 
+body {
+  background: #fff;
+}
+
 .navbar {
   padding: 0 var(--padding-x);
   height: auto;

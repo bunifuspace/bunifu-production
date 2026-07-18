@@ -412,7 +412,7 @@ p.quote {
   font-size: var(--text-14);
   color: var(--theme-500);
   padding-bottom: 3px;
-  border-bottom: 2px solid var(--theme-500);
+  border-bottom: 1px solid var(--theme-500);
   transition: 0.3s var(--ease-smooth);
 }
 
@@ -517,6 +517,8 @@ p.quote {
   border-bottom: var(--theme-500) 1px solid;
   padding: 3px 0;
   transition: 0.3s var(--ease-smooth);
+  text-transform: uppercase;
+  font-size: var(--text-14);
 }
 
 .project .btn a:hover {

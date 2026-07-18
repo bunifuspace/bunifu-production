@@ -81,11 +81,13 @@ body {
 }
 
 .navbar .visible .side-action .menu.active::before {
-  transform: rotate(45deg) translateY(-150%) translateX(-15%);
+  top: 50%;
+  transform: rotate(45deg);
 }
 
 .navbar .visible .side-action .menu.active::after {
-  transform: rotate(-45deg) translateY(150%) translateX(-15%);
+  top: 50%;
+  transform: rotate(-45deg);
 }
 
 .navbar .hidden {

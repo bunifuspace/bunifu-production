@@ -9,3 +9,15 @@
   src: url(poppins/Poppins-Light.ttf);
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(poppins/Poppins-Bold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url(poppins/Poppins-ExtraLight.ttf);
+  font-display: swap;
+}

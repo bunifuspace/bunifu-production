@@ -243,7 +243,6 @@ span.warning {
 
 .feature {
   padding: var(--space-6) 10vw;
-  min-height: 400px;
 }
 
 .feature h2 {
@@ -320,7 +319,6 @@ span.warning {
 
 .process {
   padding: var(--space-6) 10vw;
-  min-height: 400px;
 }
 
 .process h2 {
@@ -330,7 +328,7 @@ span.warning {
 .process p {
   font-size: var(--fs-lg);
   color: var(--text-muted);
-  padding: var(--space-4) 0;
+  padding: var(--space-1) 0;
 }
 
 .process a {
@@ -364,7 +362,6 @@ span.warning {
 
 .innovation {
   padding: var(--space-6) 10vw;
-  min-height: 400px;
 }
 
 .innovation h2 {
@@ -391,7 +388,6 @@ span.warning {
 
 .craft {
   padding: var(--space-6) 10vw;
-  min-height: 400px;
 }
 
 .craft h2 {
@@ -420,7 +416,6 @@ span.warning {
 
 .collaborate {
   padding: var(--space-6) 10vw;
-  min-height: 600px;
 }
 
 .collaborate h2 {
@@ -450,7 +445,6 @@ span.warning {
 
 .values {
   padding: var(--space-6) 10vw;
-  min-height: 500px;
 }
 
 .values h2 {
@@ -492,7 +486,6 @@ span.warning {
 
 .statement {
   padding: var(--space-6) 10vw;
-  min-height: 500px;
 }
 
 .statement h2 {
@@ -515,7 +508,6 @@ span.warning {
 
 .faqs {
   padding: var(--space-6) 10vw;
-  min-height: 400px;
 }
 
 .faqs h2 {
@@ -572,7 +564,6 @@ span.warning {
 
 footer {
   padding: var(--space-6) 10vw;
-  min-height: 400px;
 }
 
 footer p {

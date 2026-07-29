@@ -168,14 +168,14 @@ main {
 }
 
 .sidebar ul.combo .top span {
-  font-size: var(--text-20);
+  font-size: var(--text-24);
   color: var(--theme-500);
   font-size: var(--text-20);
   transition: transform 0.3s var(--ease-smooth);
 }
 
 .sidebar ul.combo li.active span {
-  transform: rotate(45deg);
+  transform: rotate(90deg);
 }
 
 @keyframes slidefromright {

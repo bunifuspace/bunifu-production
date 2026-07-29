@@ -252,7 +252,7 @@ span.warning {
 .feature a {
   color: var(--accent);
   text-decoration: none;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-lg);
 }
 
 .feature p {
@@ -315,6 +315,7 @@ span.warning {
 .why-we-build .wrapper .card a {
   color: var(--accent);
   text-decoration: none;
+  font-size: var(--fs-lg);
 }
 
 .process {
@@ -334,7 +335,7 @@ span.warning {
 .process a {
   color: var(--accent);
   text-decoration: none;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-lg);
 }
 
 .process h3 {
@@ -383,7 +384,7 @@ span.warning {
 .innovation a {
   color: var(--accent);
   text-decoration: none;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-lg);
 }
 
 .craft {
@@ -411,7 +412,7 @@ span.warning {
 .craft a {
   color: var(--accent);
   text-decoration: none;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-lg);
 }
 
 .collaborate {
@@ -440,7 +441,7 @@ span.warning {
 .collaborate a {
   color: var(--accent);
   text-decoration: none;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-lg);
 }
 
 .values {
@@ -503,7 +504,7 @@ span.warning {
 .statement a {
   color: var(--accent);
   text-decoration: none;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-lg);
 }
 
 .faqs {
@@ -542,11 +543,11 @@ span.warning {
 .faqs .item .question span {
   font-size: var(--fs-2xl);
   transition: transform 0.5s ease;
-  font-family: var(--extra-font-light);
+  transform: rotate(90deg);
 }
 
 .faqs .item.active span {
-  transform: rotate(225deg);
+  transform: rotate(-90deg);
 }
 
 .faqs .answer {

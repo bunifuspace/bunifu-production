@@ -140,7 +140,7 @@ footer {
 
 footer .wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-4);
 }
 
@@ -178,5 +178,8 @@ footer ul li a {
   }
   footer {
     padding: var(--space-6);
+  }
+  footer .wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

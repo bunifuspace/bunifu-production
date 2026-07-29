@@ -121,6 +121,7 @@ body {
 
 .error {
   padding: var(--space-12) 10vw;
+  min-height: 29vh;
   display: flex;
   flex-direction: column;
   align-items: center;

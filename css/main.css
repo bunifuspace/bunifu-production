@@ -202,6 +202,15 @@ body {
 
 .navbar .navi .links ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navbar .navi .links ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .navbar .navi .links ul li a {
@@ -222,14 +231,14 @@ body {
 .navbar .navi .links .dropdown {
   height: 0;
   overflow: hidden;
-  padding-left: 20px;
+  padding-right: 20px;
   transition:
     height 0.35s ease,
     padding 0.35s ease;
 }
 
 .navbar .navi .links .dropdown ul li {
-  line-height: 1.1;
+  line-height: 1.5;
 }
 
 .navbar .navi .links .dropdown ul li a {

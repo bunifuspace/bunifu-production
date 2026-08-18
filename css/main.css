@@ -1,5 +1,5 @@
 :root {
-  --font-primary: "Montserrat", sans-serif;
+  --font-primary: "Nunito", sans-serif;
   --font-mono: "Geist Mono", monospace;
   --font-hand: "Edu NSW ACT Cursive", cursive;
   --head-fonts: clamp(2rem, 6vw, 5rem);
@@ -195,6 +195,13 @@ html {
 
 body {
   background: var(--bg-dark);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
 }
 
 /* search */
@@ -918,7 +925,7 @@ footer {
     line-height: 1.5;
     a {
       text-decoration: none;
-      color: var(--text-primary);
+      color: var(--color-gray-300);
     }
   }
   p.location {

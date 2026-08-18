@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="40%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="50%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="33%" stop-color="#3b82f6" />
+      <stop offset="66%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="bannerArt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="25%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="75%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="85%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <linearGradient id="cyanInk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+
+    <linearGradient id="magentaInk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="100%" stop-color="#be185d" />
+    </linearGradient>
+
+    <linearGradient id="yellowInk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+
+    <linearGradient id="blackInk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#020617" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Floor Shadow -->
+  <ellipse cx="450" cy="505" rx="390" ry="14" fill="#cbd5e1" opacity="0.6" />
+
+  <!-- STAND STRUCTURE -->
+  <!-- Left Leg Base -->
+  <path d="M 100 480 L 190 480 L 180 460 L 110 460 Z" fill="#1e293b" />
+  <circle cx="115" cy="492" r="10" fill="#0f172a" />
+  <circle cx="115" cy="492" r="4" fill="#94a3b8" />
+  <circle cx="175" cy="492" r="10" fill="#0f172a" />
+  <circle cx="175" cy="492" r="4" fill="#94a3b8" />
+  <rect x="140" y="270" width="20" height="195" fill="url(#metalGrad)" />
+
+  <!-- Right Leg Base -->
+  <path d="M 710 480 L 800 480 L 790 460 L 720 460 Z" fill="#1e293b" />
+  <circle cx="725" cy="492" r="10" fill="#0f172a" />
+  <circle cx="725" cy="492" r="4" fill="#94a3b8" />
+  <circle cx="785" cy="492" r="10" fill="#0f172a" />
+  <circle cx="785" cy="492" r="4" fill="#94a3b8" />
+  <rect x="740" y="270" width="20" height="195" fill="url(#metalGrad)" />
+
+  <!-- Lower Crossbar Stand -->
+  <rect x="160" y="420" width="580" height="16" fill="#334155" />
+  <rect x="160" y="423" width="580" height="3" fill="#64748b" />
+
+  <!-- Media Catch Basket (Fabric/Canvas Catcher) -->
+  <path d="M 160 320 C 180 450, 220 455, 450 455 C 680 455, 720 450, 740 320 C 720 435, 670 440, 450 440 C 230 440, 180 435, 160 320 Z" fill="#475569" opacity="0.4" />
+  <line x1="160" y1="445" x2="740" y2="445" stroke="#334155" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Roll Feed Shaft (Back/Bottom Roll) -->
+  <rect x="165" y="300" width="570" height="30" rx="4" fill="#94a3b8" />
+  <!-- Media Roll Material -->
+  <rect x="180" y="303" width="540" height="24" rx="2" fill="#f8fafc" />
+  <rect x="175" y="298" width="8" height="34" rx="2" fill="#0f172a" />
+  <rect x="717" y="298" width="8" height="34" rx="2" fill="#0f172a" />
+
+  <!-- PRINTED MEDIA OUTPUT (HANGING BANNER) -->
+  <g filter="url(#dropShadow)">
+    <!-- Base Paper Sheet -->
+    <path d="M 190 230 L 710 230 L 705 400 C 705 415, 695 420, 680 420 L 220 420 C 205 420, 195 415, 195 400 Z" fill="url(#paperGrad)" />
+    
+    <!-- Printed Graphic Content -->
+    <!-- Geometric Vector Graphic on Banner -->
+    <path d="M 205 240 L 695 240 L 695 380 C 600 340, 550 410, 450 350 C 350 290, 280 390, 205 350 Z" fill="url(#bannerArt)" opacity="0.85" />
+    <circle cx="580" cy="300" r="35" fill="#ffffff" opacity="0.2" />
+    <circle cx="320" cy="320" r="50" fill="#ffffff" opacity="0.15" />
+    <path d="M 205 310 Q 350 260, 450 320 T 695 290 L 695 390 L 205 390 Z" fill="#0f172a" opacity="0.7" />
+    
+    <!-- Prominent "CITY SIGNS" Text on Printed Banner -->
+    <text x="220" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="3" opacity="0.95">CITY SIGNS</text>
+    <text x="222" y="298" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="2">LARGE FORMAT PRINTING</text>
+
+    <!-- CMYK Alignment / Color Calibration Test Bars on Edge -->
+    <g transform="translate(683, 245)">
+      <rect x="0" y="0" width="6" height="12" fill="#06b6d4" />
+      <rect x="0" y="14" width="6" height="12" fill="#ec4899" />
+      <rect x="0" y="28" width="6" height="12" fill="#eab308" />
+      <rect x="0" y="42" width="6" height="12" fill="#0f172a" />
+      <rect x="0" y="56" width="6" height="12" fill="#06b6d4" />
+      <rect x="0" y="70" width="6" height="12" fill="#ec4899" />
+      <rect x="0" y="84" width="6" height="12" fill="#eab308" />
+    </g>
+  </g>
+
+  <!-- MAIN PRINTER CHASSIS STRUCTURE -->
+  <g filter="url(#dropShadow)">
+    <!-- Main Enclosure Body -->
+    <rect x="110" y="140" width="680" height="130" rx="16" fill="url(#bodyGrad)" stroke="#475569" stroke-width="2" />
+
+    <!-- Top Cover Lid / Hood -->
+    <path d="M 130 140 L 770 140 C 780 140, 785 145, 785 155 L 785 180 L 115 180 L 115 155 C 115 145, 120 140, 130 140 Z" fill="#334155" />
+    <rect x="140" y="146" width="620" height="4" rx="2" fill="#64748b" />
+
+    <!-- Top Tinted Inspection Window (Semi-transparent) -->
+    <rect x="230" y="155" width="440" height="22" rx="4" fill="#0f172a" opacity="0.7" />
+    <rect x="230" y="155" width="440" height="22" rx="4" stroke="#475569" stroke-width="1" fill="none" />
+    <line x1="250" y1="160" x2="300" y2="172" stroke="#ffffff" stroke-width="1.5" opacity="0.2" stroke-linecap="round" />
+    <line x1="310" y1="160" x2="330" y2="172" stroke="#ffffff" stroke-width="1.5" opacity="0.2" stroke-linecap="round" />
+
+    <!-- Sleek Horizontal LED Light Strip -->
+    <rect x="110" y="183" width="680" height="4" fill="url(#accentGrad)" />
+
+    <!-- Printing Platen / Output Slot Gap -->
+    <rect x="160" y="218" width="580" height="18" rx="3" fill="#020617" />
+    <!-- Heating Zone Indicators / Platen Grid -->
+    <line x1="180" y1="227" x2="720" y2="227" stroke="#334155" stroke-width="2" stroke-dasharray="6 4" />
+
+    <!-- Internal Printhead Rail & Carriage (Visible inside slot) -->
+    <rect x="410" y="195" width="80" height="32" rx="4" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5" />
+    <rect x="420" y="200" width="60" height="6" rx="1" fill="#38bdf8" />
+    <circle cx="470" cy="216" r="3" fill="#22c55e" />
+
+    <!-- BULK INK SYSTEM (LEFT SIDE) -->
+    <rect x="125" y="192" width="85" height="68" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <rect x="130" y="196" width="75" height="10" rx="2" fill="#1e293b" />
+    <text x="167" y="203" font-family="sans-serif" font-size="7" font-weight="bold" fill="#94a3b8" text-anchor="middle">INK SUPPLY</text>
+
+    <!-- CMYK Cartridges / Tanks -->
+    <!-- Cyan -->
+    <rect x="133" y="210" width="14" height="42" rx="2" fill="url(#cyanInk)" />
+    <rect x="136" y="213" width="8" height="30" rx="1" fill="#ffffff" opacity="0.2" />
+    <!-- Magenta -->
+    <rect x="151" y="210" width="14" height="42" rx="2" fill="url(#magentaInk)" />
+    <rect x="154" y="213" width="8" height="30" rx="1" fill="#ffffff" opacity="0.2" />
+    <!-- Yellow -->
+    <rect x="169" y="210" width="14" height="42" rx="2" fill="url(#yellowInk)" />
+    <rect x="172" y="213" width="8" height="30" rx="1" fill="#ffffff" opacity="0.2" />
+    <!-- Black -->
+    <rect x="187" y="210" width="14" height="42" rx="2" fill="url(#blackInk)" />
+    <rect x="190" y="213" width="8" height="30" rx="1" fill="#ffffff" opacity="0.1" />
+
+    <!-- CONTROL PANEL / TOUCHSCREEN (RIGHT SIDE) -->
+    <!-- Mounting Arm -->
+    <path d="M 770 190 L 805 180 L 805 210 L 770 215 Z" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    
+    <!-- Swivel Touchscreen Monitor -->
+    <g transform="translate(795, 135)">
+      <!-- Screen Outer Frame -->
+      <rect x="0" y="0" width="65" height="85" rx="6" fill="#0f172a" stroke="#475569" stroke-width="2" />
+      <!-- Display Interface -->
+      <rect x="5" y="5" width="55" height="58" rx="3" fill="#1e293b" />
+      
+      <!-- UI Elements on Screen -->
+      <rect x="9" y="9" width="47" height="8" rx="1" fill="#3b82f6" />
+      <text x="32" y="15" font-family="sans-serif" font-size="5" font-weight="bold" fill="#ffffff" text-anchor="middle">CITY SIGNS</text>
+      
+      <!-- Mini Preview on Screen -->
+      <rect x="9" y="21" width="28" height="22" rx="1" fill="#020617" />
+      <rect x="11" y="23" width="24" height="18" fill="url(#accentGrad)" opacity="0.8" />
+      <text x="23" y="34" font-family="sans-serif" font-size="4" font-weight="bold" fill="#ffffff" text-anchor="middle">CITY</text>
+      
+      <!-- Progress Bar & Stats -->
+      <rect x="40" y="21" width="16" height="4" rx="1" fill="#22c55e" />
+      <rect x="40" y="28" width="12" height="3" rx="1" fill="#64748b" />
+      <rect x="40" y="34" width="14" height="3" rx="1" fill="#64748b" />
+      
+      <rect x="9" y="47" width="47" height="12" rx="2" fill="#020617" />
+      <!-- Status Text graphic -->
+      <rect x="13" y="51" width="22" height="4" rx="1" fill="#38bdf8" />
+      <circle cx="50" cy="53" r="3" fill="#22c55e" />
+
+      <!-- Physical Buttons Below Screen -->
+      <circle cx="16" cy="72" r="4" fill="#334155" />
+      <circle cx="16" cy="72" r="2" fill="#22c55e" />
+      
+      <circle cx="32" cy="72" r="4" fill="#334155" />
+      <circle cx="32" cy="72" r="2" fill="#eab308" />
+
+      <!-- Emergency Stop Button -->
+      <circle cx="48" cy="72" r="5" fill="#ef4444" stroke="#7f1d1d" stroke-width="1" />
+    </g>
+
+    <!-- Main Power / Status Light Bar on Frame -->
+    <circle cx="750" cy="160" r="4" fill="#22c55e" />
+    <circle cx="750" cy="160" r="7" fill="#22c55e" opacity="0.3" />
+
+    <!-- Brand / Model Plate -->
+    <rect x="620" y="196" width="90" height="14" rx="2" fill="#1e293b" />
+    <text x="665" y="206" font-family="sans-serif" font-size="8" font-weight="bold" fill="#38bdf8" letter-spacing="1" text-anchor="middle">CITY SIGNS</text>
+  </g>
+
+  <!-- Floor Level Shadow Accent -->
+  <line x1="80" y1="505" x2="820" y2="505" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" />
+</svg>

@@ -21,6 +21,7 @@ main {
     font-size: var(--font-size-5xl);
     padding: var(--space-4);
     text-align: center;
+    max-width: 600px;
   }
   a {
     text-decoration: none;

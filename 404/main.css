@@ -1,0 +1,32 @@
+body {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  h2 {
+    font-size: var(--font-size-5xl);
+    padding: var(--space-4);
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    font-size: var(--font-size-xl);
+    i {
+      font-size: var(--font-size-base);
+    }
+  }
+}

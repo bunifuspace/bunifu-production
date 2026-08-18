@@ -776,6 +776,26 @@ body {
   background: var(--text-subtle);
 }
 
+.form-status {
+  margin-bottom: var(--space-6);
+  font-size: var(--font-size-base);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-status.success,
+.form-status.error {
+  opacity: 1;
+}
+
+.form-status.success {
+  color: var(--success);
+}
+
+.form-status.error {
+  color: #f87171;
+}
+
 footer {
   padding: var(--space-12) 10vw var(--space-4) 10vw;
   p {

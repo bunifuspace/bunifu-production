@@ -747,7 +747,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
-  padding-bottom: var(--space-6);
+  padding-bottom: var(--space-2);
   textarea {
     border: 1px solid var(--text-subtle);
     border-radius: var(--radius-lg);
@@ -758,8 +758,9 @@ body {
 }
 
 .inquiry-form button {
-  padding: 8px 16px;
-  background: var(--color-gray-200);
+  padding: 5px 12px;
+  background: var(--color-gray-100);
+  font-weight: 500;
   border: none;
   outline: none;
   color: var(--bg-dark);
@@ -767,13 +768,13 @@ body {
   border-radius: var(--radius-lg);
   transition: all 0.3s ease;
   i {
-    color: inherit;
+    color: var(--bg-dark);
     font-size: var(--font-size-base);
   }
 }
 
 .inquiry-form button:hover {
-  background: var(--text-subtle);
+  background: var(--text-primary);
 }
 
 .form-status {

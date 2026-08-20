@@ -297,38 +297,30 @@ h4 {
 
 .nav {
   position: fixed;
+  height: 44px;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-7) 10vw;
-  background: var(--color-gray-800);
+  padding: 0 10vw;
+  background: var(--bg-dark);
   z-index: var(--z-header);
   transition: all 0.3s ease-in-out;
 }
 
 .nav .brand {
+  height: 100%;
   a {
     position: relative;
     text-decoration: none;
     font-weight: 700;
     font-family: var(--font-hand);
     font-size: var(--font-size-xl);
-  }
-  a::before {
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 35%;
-    left: 1px;
-    bottom: 3px;
-    background: var(--text-subtle);
-    transition: all 0.3s ease-in-out;
-  }
-  a:hover::before {
-    width: 10%;
+    img {
+      height: 100%;
+    }
   }
 }
 
@@ -340,7 +332,6 @@ h4 {
 
 .nav ul li a {
   text-decoration: none;
-  text-transform: uppercase;
   font-size: var(--font-size-lg);
 }
 
@@ -935,7 +926,7 @@ footer {
 
 @media (max-width: 768px) {
   .nav {
-    padding: var(--space-4) var(--space-4);
+    padding: 0 var(--space-4);
     ul {
       display: none;
     }

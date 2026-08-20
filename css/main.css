@@ -358,27 +358,16 @@ h4 {
 .home {
   padding: var(--space-32) 10vw;
   position: relative;
-  height: 100svh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(../uploads/jukka-aalho-OaPksPcVp50-unsplash.jpg) 40% 67% /
-    cover;
-  h1 {
-    font-weight: 600;
-    font-family: var(--font-hand);
-    font-size: var(--head-fonts);
-    color: var(--text-primary);
-    text-align: center;
-    background: linear-gradient(
-      to top right,
-      var(--color-gray-100),
-      var(--color-gray-700)
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  gap: var(--space-10);
+  background: var(--bg-dark);
+  img {
+    width: clamp(360px, 6vw, 600px);
+    max-width: 90%;
   }
   p {
     font-size: var(--font-sub-heading);
@@ -392,7 +381,7 @@ h4 {
 
 .home .explore {
   position: absolute;
-  bottom: var(--space-6);
+  bottom: var(--space-12);
 }
 
 .home .explore a {

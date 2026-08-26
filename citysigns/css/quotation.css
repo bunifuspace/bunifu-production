@@ -1,0 +1,313 @@
+.quote-page {
+  background: var(--c-paper);
+  color: var(--color-text-dark);
+}
+
+.quote-hero {
+  min-height: 88svh;
+  padding: calc(80px + var(--space-3xl)) var(--space-xl) var(--space-3xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.quote-hero h1 {
+  margin-top: var(--space-lg);
+  max-width: 1100px;
+  color: var(--color-text-dark);
+  font-family: var(--font-family-heading);
+  font-size: clamp(4rem, 12vw, 11rem);
+  line-height: 0.8;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+.quote-hero h1 em,
+.quote-aside h2 em,
+.quote-direct h2 em,
+.quote-end h2 em {
+  color: var(--color-primary-green);
+  font-family: var(--emphasize-font-family);
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.quote-hero p {
+  max-width: 650px;
+  margin-top: var(--space-xl);
+  color: var(--c-muted);
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-normal);
+}
+
+.quote-form-section {
+  padding: var(--space-3xl) var(--space-xl);
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--space-3xl);
+  background: var(--c-charcoal);
+}
+
+.quote-aside {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.quote-aside h2 {
+  margin-top: var(--space-md);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-4xl);
+  line-height: 0.88;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+.quote-aside > p {
+  max-width: 480px;
+  margin-top: var(--space-lg);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.quote-note {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+  max-width: 500px;
+  padding: var(--space-md) 0;
+  border-top: 1px solid #4a4a43;
+}
+
+.quote-note:first-of-type {
+  margin-top: var(--space-2xl);
+}
+
+.quote-note span {
+  color: var(--color-primary-yellow);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+}
+
+.quote-note p {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+}
+
+.quote-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg) var(--space-md);
+}
+
+.quote-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.quote-field.full,
+.quote-submit.full {
+  grid-column: 1 / -1;
+}
+
+.quote-field label {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.quote-field input,
+.quote-field select,
+.quote-field textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #55554d;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: var(--color-text-primary);
+  padding: 13px 0;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-lg);
+  transition: border-color 0.3s var(--e-out);
+}
+
+.quote-field input::placeholder,
+.quote-field textarea::placeholder {
+  color: #686860;
+}
+
+.quote-field select {
+  cursor: pointer;
+}
+
+.quote-field select option {
+  color: var(--color-text-dark);
+  background: var(--c-paper);
+}
+
+.quote-field textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.quote-field input:focus,
+.quote-field select:focus,
+.quote-field textarea:focus {
+  border-color: var(--color-primary-yellow);
+}
+
+.quote-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.quote-submit button {
+  border: 0;
+  padding: 13px 20px;
+  border-radius: var(--border-radius-pill);
+  background: var(--color-primary-yellow);
+  color: var(--color-text-dark);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  transition:
+    background 0.3s var(--e-out),
+    transform 0.3s var(--e-out);
+}
+
+.quote-submit button i {
+  color: inherit;
+  margin-left: 6px;
+}
+
+.quote-submit button:hover {
+  background: var(--color-primary-green);
+  transform: translateY(-2px);
+}
+
+.quote-submit span {
+  color: #686860;
+  font-size: var(--font-size-sm);
+}
+
+.quote-direct {
+  padding: var(--space-3xl) var(--space-xl);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--space-3xl);
+  background: var(--color-bg-light);
+}
+
+.quote-direct h2 {
+  margin-top: var(--space-md);
+  color: var(--color-text-dark);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-5xl);
+  line-height: 0.84;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.quote-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.quote-contact a {
+  color: var(--color-text-dark);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-2xl);
+  text-decoration: none;
+  line-height: 1.4;
+  transition: color 0.3s var(--e-out);
+}
+
+.quote-contact a:hover {
+  color: var(--color-primary-green);
+}
+
+.quote-contact p {
+  margin-top: var(--space-lg);
+  color: var(--c-muted);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+}
+
+.quote-end {
+  min-height: 65svh;
+  padding: var(--space-3xl) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-primary-yellow);
+}
+
+.quote-end h2 {
+  margin-top: var(--space-md);
+  color: var(--color-text-dark);
+  font-family: var(--font-family-heading);
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: 0.8;
+  letter-spacing: -0.075em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .quote-hero {
+    min-height: 85svh;
+    padding: calc(60px + var(--space-2xl)) var(--space-md) var(--space-2xl);
+  }
+
+  .quote-hero h1 {
+    font-size: clamp(3.5rem, 16vw, 6rem);
+  }
+
+  .quote-form-section {
+    grid-template-columns: 1fr;
+    padding: var(--space-2xl) var(--space-md);
+    gap: var(--space-2xl);
+  }
+
+  .quote-aside {
+    position: static;
+  }
+
+  .quote-form {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-field.full,
+  .quote-submit.full {
+    grid-column: auto;
+  }
+
+  .quote-direct {
+    grid-template-columns: 1fr;
+    padding: var(--space-2xl) var(--space-md);
+    gap: var(--space-2xl);
+  }
+
+  .quote-direct h2 {
+    font-size: clamp(3.5rem, 15vw, 6rem);
+  }
+
+  .quote-end {
+    min-height: 60svh;
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .quote-end h2 {
+    font-size: clamp(3.5rem, 15vw, 6rem);
+  }
+}

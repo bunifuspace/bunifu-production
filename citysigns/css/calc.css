@@ -1,0 +1,309 @@
+.calculator-page {
+  background: var(--c-paper);
+  color: var(--color-text-dark);
+}
+
+.calculator-hero {
+  min-height: 78svh;
+  padding: calc(80px + var(--space-3xl)) var(--space-xl) var(--space-3xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.calculator-hero h1 {
+  margin-top: var(--space-lg);
+  font-family: var(--font-family-heading);
+  font-size: clamp(5rem, 15vw, 13rem);
+  line-height: 0.76;
+  letter-spacing: -0.09em;
+  text-transform: uppercase;
+  color: var(--color-text-dark);
+}
+
+.calculator-hero h1 em,
+.calculator-note h2 em {
+  color: var(--color-primary-green);
+  font-family: var(--emphasize-font-family);
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.calculator-hero p {
+  max-width: 650px;
+  margin-top: var(--space-xl);
+  color: var(--c-muted);
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-normal);
+}
+
+.calculator {
+  padding: var(--space-3xl) var(--space-xl);
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: var(--space-3xl);
+  background: var(--c-charcoal);
+}
+
+.calculator-options {
+  max-width: 850px;
+}
+
+.calc-field {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid #494941;
+}
+
+.calc-field label {
+  display: block;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.calc-field select,
+.calc-field input,
+.calc-field textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #5a5a51;
+  border-radius: 0;
+  outline: none;
+  padding: 12px 0;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-lg);
+}
+
+.calc-field select {
+  cursor: pointer;
+}
+
+.calc-field select option {
+  background: var(--c-charcoal);
+  color: var(--color-text-primary);
+}
+
+.calc-field input::placeholder,
+.calc-field textarea::placeholder {
+  color: #696960;
+}
+
+.calc-field textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.calc-field select:focus,
+.calc-field input:focus,
+.calc-field textarea:focus {
+  border-color: var(--color-primary-yellow);
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.quantity-control button {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border: 1px solid #5a5a51;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition:
+    background 0.25s var(--e-out),
+    color 0.25s var(--e-out);
+}
+
+.quantity-control button:hover {
+  background: var(--color-primary-yellow);
+  color: var(--color-text-dark);
+}
+
+.quantity-control input {
+  max-width: 120px;
+  text-align: center;
+}
+
+.dimensions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dimensions input {
+  flex: 1;
+}
+
+.dimensions span {
+  color: var(--c-muted);
+  font-size: var(--font-size-xl);
+}
+
+.dimensions select {
+  width: 90px;
+}
+
+.estimate {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+  padding: var(--space-xl);
+  background: var(--c-paper);
+  color: var(--color-text-dark);
+}
+
+.estimate-price {
+  padding: var(--space-xl) 0;
+  border-bottom: 1px solid #c6c3b8;
+}
+
+.estimate-price small {
+  display: block;
+  color: var(--c-muted);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.estimate-price strong {
+  display: block;
+  margin-top: 5px;
+  color: var(--color-text-dark);
+  font-family: var(--font-family-heading);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.estimate-lines {
+  padding: var(--space-md) 0;
+}
+
+.estimate-lines div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: 10px 0;
+  border-bottom: 1px solid #d6d3c8;
+}
+
+.estimate-lines span {
+  color: var(--c-muted);
+  font-size: var(--font-size-sm);
+}
+
+.estimate-lines strong {
+  max-width: 60%;
+  color: var(--color-text-dark);
+  font-size: var(--font-size-sm);
+  text-align: right;
+}
+
+.estimate-disclaimer {
+  padding: var(--space-md) 0;
+  color: var(--c-muted);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+}
+
+.whatsapp-quote {
+  width: 100%;
+  border: 0;
+  padding: 14px 20px;
+  border-radius: var(--border-radius-pill);
+  background: var(--color-primary-yellow);
+  color: var(--color-text-dark);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  transition:
+    background 0.3s var(--e-out),
+    transform 0.3s var(--e-out);
+}
+
+.whatsapp-quote i {
+  color: inherit;
+  margin-left: 7px;
+}
+
+.whatsapp-quote:hover {
+  background: var(--color-primary-green);
+  transform: translateY(-2px);
+}
+
+.calculator-note {
+  min-height: 70svh;
+  padding: var(--space-3xl) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-primary-yellow);
+}
+
+.calculator-note h2 {
+  margin-top: var(--space-md);
+  max-width: 1000px;
+  color: var(--color-text-dark);
+  font-family: var(--font-family-heading);
+  font-size: clamp(4rem, 11vw, 10rem);
+  line-height: 0.78;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+.calculator-note p {
+  max-width: 600px;
+  margin-top: var(--space-xl);
+  color: #57533f;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-normal);
+}
+
+@media (max-width: 768px) {
+  .calculator-hero {
+    min-height: 80svh;
+    padding: calc(60px + var(--space-2xl)) var(--space-md) var(--space-2xl);
+  }
+
+  .calculator-hero h1 {
+    font-size: clamp(4rem, 18vw, 7rem);
+  }
+
+  .calculator {
+    grid-template-columns: 1fr;
+    padding: var(--space-2xl) var(--space-md);
+    gap: var(--space-2xl);
+  }
+
+  .estimate {
+    position: static;
+  }
+
+  .dimensions {
+    flex-wrap: wrap;
+  }
+
+  .dimensions input {
+    min-width: 0;
+  }
+
+  .calculator-note {
+    min-height: 65svh;
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .calculator-note h2 {
+    font-size: clamp(4rem, 17vw, 7rem);
+  }
+}

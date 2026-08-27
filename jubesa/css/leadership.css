@@ -1,0 +1,218 @@
+.cover {
+  margin-top: var(--nav-height);
+  width: 100%;
+  aspect-ratio: 1202 / 802;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../upload/nick-fewings-EkyuhD7uwSM-unsplash.jpg) 27% 50% /
+    cover no-repeat;
+}
+
+.cover h1 {
+  font-size: var(--text-title-large);
+  font-weight: var(--weight-medium);
+  color: var(--color-white);
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.55);
+}
+
+.leadership-intro,
+.leaders,
+.leadership-principles,
+.leadership-closing {
+  padding: var(--space-3xl) var(--space-md);
+}
+
+.leadership-intro .content,
+.leaders .content,
+.leadership-principles .content,
+.leadership-closing .content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leadership-intro h2,
+.leaders h2,
+.leadership-principles h2,
+.leadership-closing h2 {
+  margin-top: var(--space-md);
+  font-size: var(--text-title-large);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
+}
+
+.leadership-intro h2 span,
+.leaders h2 span,
+.leadership-principles h2 span,
+.leadership-closing h2 span {
+  background: #008f5a;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.leadership-intro .content > p:last-child {
+  max-width: 740px;
+  margin-top: var(--space-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.leaders {
+  background: var(--color-bg-secondary);
+}
+
+.leaders .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xs);
+  margin-top: var(--space-2xl);
+}
+
+.leader {
+  overflow: hidden;
+  border-radius: var(--radius-2xl);
+  background: var(--color-bg);
+}
+
+.leader .image {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--color-bg-secondary);
+}
+
+.leader .image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.leader .info {
+  padding: var(--space-lg);
+}
+
+.leader .role {
+  color: var(--color-green);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.leader h3 {
+  margin-top: var(--space-xs);
+  font-size: var(--font-size-xl);
+  font-weight: var(--weight-medium);
+}
+
+.leader .info > p:last-child {
+  margin-top: var(--space-sm);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.leadership-principles {
+  background: var(--color-bg);
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xs);
+  margin-top: var(--space-2xl);
+}
+
+.principle {
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-secondary);
+}
+
+.principle small {
+  color: var(--color-green);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+}
+
+.principle h3 {
+  margin-top: var(--space-xl);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--weight-medium);
+}
+
+.principle p {
+  margin-top: var(--space-sm);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  line-height: var(--leading-relaxed);
+}
+
+.leadership-closing {
+  min-height: 80svh;
+  display: flex;
+  align-items: center;
+  background: var(--color-bg-secondary);
+}
+
+.leadership-closing .content > p:last-child {
+  max-width: 680px;
+  margin-top: var(--space-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: var(--leading-relaxed);
+}
+
+@media (max-width: 900px) {
+  .leaders .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .leader {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .leader .image {
+    aspect-ratio: 4 / 5;
+  }
+
+  .principles {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .cover {
+    aspect-ratio: 4 / 3;
+  }
+
+  .cover h1 {
+    font-size: var(--text-title);
+  }
+
+  .leadership-intro,
+  .leaders,
+  .leadership-principles,
+  .leadership-closing {
+    padding-inline: var(--space-sm);
+  }
+
+  .leadership-intro h2,
+  .leaders h2,
+  .leadership-principles h2,
+  .leadership-closing h2 {
+    font-size: var(--text-title);
+  }
+
+  .leader {
+    display: block;
+  }
+
+  .leader .image {
+    aspect-ratio: 4 / 5;
+  }
+}

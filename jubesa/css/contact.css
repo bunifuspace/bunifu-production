@@ -1,0 +1,344 @@
+.cover {
+  margin-top: var(--nav-height);
+  width: 100%;
+  aspect-ratio: 1202 / 802;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../upload/michal-biernat-h0xEUQXzU38-unsplash.jpg) center /
+    cover no-repeat;
+}
+
+.cover h1 {
+  margin: 0;
+  padding-inline: var(--space-md);
+  color: var(--color-white);
+  font-size: var(--text-title-large);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
+  text-align: center;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.55);
+}
+
+.contact-hero {
+  padding: var(--section-space-large) var(--space-md);
+  min-height: calc(80svh - var(--nav-height));
+  display: flex;
+  align-items: center;
+}
+
+.contact-hero .content {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin: 0 auto;
+}
+
+.contact-hero h1 {
+  margin-top: var(--space-md);
+  font-size: var(--text-hero);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+.contact-hero h1 span,
+.contact-section h2 span,
+.opportunities h2 span,
+.closing h2 span {
+  background: #008f5a;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.contact-hero .intro {
+  max-width: 650px;
+  margin-top: var(--space-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.contact-section {
+  padding: var(--section-space) var(--space-md);
+  background: var(--color-bg-secondary);
+}
+
+.contact-section .content,
+.opportunities .content,
+.closing .content {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(3rem, 8vw, 9rem);
+}
+
+.contact-details h2 {
+  margin-top: var(--space-md);
+  font-size: var(--text-title-large);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
+}
+
+.contact-details > p {
+  max-width: 480px;
+  margin-top: var(--space-lg);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.details-list {
+  margin-top: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.detail {
+  min-height: 76px;
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: center;
+  gap: var(--space-md);
+  border-top: 1px solid var(--color-border-light);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.detail:last-child {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.detail .icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-tertiary);
+  color: var(--color-green);
+}
+
+.detail > span:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: var(--font-size-base);
+}
+
+.detail small {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+}
+
+.detail > i {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-xs);
+}
+
+.contact-form {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background: var(--color-bg);
+  border-radius: var(--radius-2xl);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.field label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--weight-medium);
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1rem;
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+  outline: none;
+  transition:
+    border-color var(--duration-normal) var(--ease-standard),
+    box-shadow var(--duration-normal) var(--ease-standard),
+    background var(--duration-normal) var(--ease-standard);
+}
+
+.field input,
+.field select {
+  min-height: 48px;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 3px var(--color-green-alpha-10);
+  background: var(--color-bg);
+}
+
+.submit {
+  min-height: var(--button-height-lg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+  padding: 0 var(--button-padding-x);
+  border: 0;
+  border-radius: var(--button-radius);
+  background: var(--color-green);
+  color: var(--color-white);
+  font-size: var(--font-size-base);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+  transition:
+    transform var(--duration-normal) var(--ease-standard),
+    background var(--duration-normal) var(--ease-standard);
+}
+
+.submit:hover {
+  background: var(--color-green-dark);
+  transform: translateY(-1px);
+}
+
+.submit:active {
+  transform: translateY(0);
+}
+
+.opportunities {
+  padding: var(--section-space-large) var(--space-md);
+}
+
+.opportunities h2 {
+  margin-top: var(--space-md);
+  font-size: var(--text-title-large);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
+}
+
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xs);
+  margin-top: var(--space-2xl);
+}
+
+.business-card {
+  min-height: 180px;
+  padding: var(--space-xl);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+  text-decoration: none;
+  transition:
+    transform var(--duration-normal) var(--ease-standard),
+    background var(--duration-normal) var(--ease-standard);
+}
+
+.business-card span {
+  font-size: var(--font-size-lg);
+  font-weight: var(--weight-medium);
+}
+
+.business-card i {
+  color: var(--color-green);
+}
+
+.business-card:hover {
+  transform: translateY(-4px);
+  background: var(--color-bg-tertiary);
+}
+
+.closing {
+  padding: var(--section-space-large) var(--space-md);
+  background: var(--color-bg-secondary);
+}
+
+.closing h2 {
+  margin-top: var(--space-md);
+  font-size: var(--text-title-large);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
+}
+
+.closing > .content > p:last-child {
+  max-width: 650px;
+  margin-top: var(--space-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+  }
+
+  .business-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .business-card {
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    min-height: auto;
+    padding-block: var(--section-space);
+  }
+
+  .contact-hero h1,
+  .contact-details h2,
+  .opportunities h2,
+  .closing h2 {
+    font-size: var(--text-title-large);
+  }
+
+  .contact-form {
+    padding: var(--space-lg);
+    border-radius: var(--radius-xl);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-hero,
+  .contact-section,
+  .opportunities,
+  .closing {
+    padding-inline: var(--space-sm);
+  }
+
+  .detail {
+    grid-template-columns: 40px 1fr auto;
+  }
+}

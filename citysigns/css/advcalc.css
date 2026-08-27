@@ -5,7 +5,7 @@
 
 .quote-intro {
   min-height: 78svh;
-  padding: calc(80px + var(--space-3xl)) var(--space-xl) var(--space-3xl);
+  padding: 100px var(--space-xl) var(--space-3xl);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -17,7 +17,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(5rem, 15vw, 13rem);
   line-height: 0.76;
-  letter-spacing: -0.09em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -58,7 +58,7 @@
   color: var(--color-text-primary);
   font-family: var(--font-family-heading);
   font-size: var(--font-size-4xl);
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
 }
 
 .quote-ref {
@@ -385,7 +385,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   line-height: 0.95;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.03em;
 }
 
 .summary-lines {
@@ -513,7 +513,7 @@
 
 .quote-confidence {
   padding: var(--space-3xl) var(--space-xl);
-  background: var(--color-primary-yellow);
+  background: var(--c-paper);
 }
 
 .quote-confidence h2 {
@@ -522,7 +522,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(4rem, 11vw, 10rem);
   line-height: 0.78;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
 }
 
@@ -582,7 +582,7 @@
 @media (max-width: 768px) {
   .quote-intro {
     min-height: 78svh;
-    padding: calc(60px + var(--space-2xl)) var(--space-md) var(--space-2xl);
+    padding: 100px var(--space-md) var(--space-2xl);
   }
 
   .quote-intro h1 {

@@ -5,7 +5,7 @@
 
 .policies-hero {
   min-height: 100svh;
-  padding: calc(80px + var(--space-3xl)) var(--space-xl) var(--space-3xl);
+  padding: 100px var(--space-xl) var(--space-3xl);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -18,7 +18,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(4rem, 11vw, 10rem);
   line-height: 0.82;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -75,7 +75,7 @@
   font-family: var(--font-family-heading);
   font-size: var(--font-size-5xl);
   line-height: 0.9;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -141,7 +141,7 @@
   font-family: var(--font-family-heading);
   font-size: var(--font-size-5xl);
   line-height: 0.88;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -159,7 +159,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--color-primary-yellow);
+  background: var(--c-paper);
 }
 
 .policies-contact h2 {
@@ -168,7 +168,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(4rem, 9vw, 9rem);
   line-height: 0.82;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -198,7 +198,7 @@
 
 @media (max-width: 768px) {
   .policies-hero {
-    padding: calc(60px + var(--space-2xl)) var(--space-md) var(--space-2xl);
+    padding: 100px var(--space-md) var(--space-2xl);
   }
 
   .policies-hero h1 {

@@ -19,13 +19,13 @@
 .work-hero::after {
   content: "WORK";
   position: absolute;
-  right: -0.05em;
+  right: -0.03em;
   bottom: -0.16em;
   font-family: var(--font-family-heading);
   font-size: clamp(9rem, 25vw, 28rem);
   line-height: 0.75;
   font-weight: 800;
-  letter-spacing: -0.09em;
+  letter-spacing: -0.03em;
   color: rgba(255, 255, 255, 0.025);
   pointer-events: none;
 }
@@ -52,7 +52,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(4rem, 10vw, 10rem);
   line-height: 0.82;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -63,7 +63,7 @@
   font-weight: 400;
   font-style: italic;
   text-transform: none;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
 }
 
 .work-hero-content p {
@@ -98,7 +98,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(3.5rem, 7vw, 7rem);
   line-height: 0.88;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -167,7 +167,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(2rem, 4vw, 4rem);
   line-height: 0.95;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.03em;
 }
 
 .work-feature-info p {
@@ -201,7 +201,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(3rem, 7vw, 7rem);
   line-height: 0.88;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -290,7 +290,7 @@
 
 .work-statement {
   min-height: 90svh;
-  background: var(--color-primary-yellow);
+  background: var(--c-paper);
   color: var(--color-text-dark);
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -313,7 +313,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(3.5rem, 7vw, 7rem);
   line-height: 0.88;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -366,7 +366,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(4rem, 8vw, 8rem);
   line-height: 0.78;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -420,7 +420,7 @@
   color: var(--color-text-dark);
   font-family: var(--font-family-heading);
   font-size: clamp(1.8rem, 3vw, 3rem);
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
 }
 
 .category-list p {
@@ -444,7 +444,7 @@
   font-family: var(--font-family-heading);
   font-size: clamp(4rem, 10vw, 10rem);
   line-height: 0.8;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 

@@ -1,0 +1,364 @@
+.cover.enterprise {
+  background: url(../upload/maksim-larin-NOpsC3nWTzY-unsplash.jpg) center /
+    cover no-repeat;
+}
+
+.trade-intro,
+.trade-categories,
+.nairobi-trade,
+.trade-process,
+.commercial,
+.trade-closing {
+  padding: var(--space-3xl) var(--space-md);
+}
+
+.trade-intro .content,
+.trade-categories .content,
+.nairobi-trade .content,
+.trade-process .content,
+.commercial .content,
+.trade-closing .content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trade-intro h2,
+.trade-categories h2,
+.nairobi-trade h2,
+.trade-process h2,
+.commercial h2,
+.trade-closing h2 {
+  margin-top: var(--space-md);
+  font-size: var(--text-title-large);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
+}
+
+.trade-intro h2 span,
+.trade-categories h2 span,
+.nairobi-trade h2 span,
+.trade-process h2 span,
+.commercial h2 span,
+.trade-closing h2 span {
+  padding: 0 5px;
+  border-radius: 5px;
+  background: #008f5a;
+}
+
+.trade-intro .content > p {
+  max-width: 740px;
+  margin-top: var(--space-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.trade-categories {
+  background: var(--color-bg-secondary);
+}
+
+.trade-categories .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xs);
+  margin-top: var(--space-2xl);
+}
+
+.trade-categories .card {
+  min-height: 520px;
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--radius-2xl);
+  background: var(--color-bg);
+}
+
+.trade-categories .number {
+  color: var(--color-green);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+}
+
+.trade-categories .data h3 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--weight-medium);
+}
+
+.trade-categories .data p {
+  margin-top: var(--space-md);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  line-height: var(--leading-relaxed);
+}
+
+.trade-categories .data ul {
+  margin-top: var(--space-lg);
+  padding: 0;
+  list-style: none;
+}
+
+.trade-categories .data li {
+  padding: var(--space-sm) 0;
+  border-top: 1px solid var(--color-border-light);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.nairobi-trade {
+  min-height: 80svh;
+  display: flex;
+  align-items: center;
+}
+
+.nairobi-trade .content > p {
+  max-width: 740px;
+  margin-top: var(--space-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.route {
+  max-width: 850px;
+  margin-top: var(--space-3xl);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+}
+
+.location small {
+  color: var(--color-green);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+}
+
+.location strong {
+  margin-top: var(--space-xs);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--weight-medium);
+}
+
+.location span {
+  margin-top: 3px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.route .line {
+  height: 1px;
+  background: var(--color-border-light);
+  position: relative;
+}
+
+.route .line::after {
+  content: "→";
+  position: absolute;
+  right: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: var(--space-sm);
+  background: var(--color-bg);
+  color: var(--color-green);
+  font-size: var(--font-size-lg);
+}
+
+.trade-process {
+  background: var(--color-bg-secondary);
+}
+
+.trade-process .content > p {
+  max-width: 740px;
+  margin-top: var(--space-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.trade-process .steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xs);
+  margin-top: var(--space-2xl);
+}
+
+.trade-process .step {
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+}
+
+.trade-process .step > span {
+  color: var(--color-green);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+}
+
+.trade-process .step h3 {
+  margin-top: var(--space-xl);
+  font-size: var(--font-size-xl);
+  font-weight: var(--weight-medium);
+}
+
+.trade-process .step p {
+  margin-top: var(--space-sm);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.commercial .content > p {
+  max-width: 740px;
+  margin-top: var(--space-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.commercial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xs);
+  margin-top: var(--space-2xl);
+}
+
+.commercial-card {
+  padding: var(--space-xl);
+  border-radius: var(--radius-2xl);
+  background: var(--color-bg-secondary);
+}
+
+.commercial-card small {
+  color: var(--color-green);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+}
+
+.commercial-card h3 {
+  margin-top: var(--space-xl);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--weight-medium);
+}
+
+.commercial-card p {
+  max-width: 520px;
+  margin-top: var(--space-sm);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  line-height: var(--leading-relaxed);
+}
+
+.trade-closing {
+  min-height: 80svh;
+  display: flex;
+  align-items: center;
+}
+
+.trade-closing .content > p {
+  max-width: 650px;
+  margin-top: var(--space-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: var(--leading-relaxed);
+}
+
+@media (max-width: 1000px) {
+  .trade-categories .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .trade-categories .card {
+    min-height: 420px;
+  }
+
+  .trade-process .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cover.enterprise {
+    aspect-ratio: 4 / 3;
+  }
+
+  .trade-process .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .trade-intro,
+  .trade-categories,
+  .nairobi-trade,
+  .trade-process,
+  .commercial,
+  .trade-closing {
+    padding-inline: var(--space-sm);
+  }
+
+  .commercial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .cover.enterprise h1 {
+    font-size: var(--text-title);
+  }
+
+  .trade-intro h2,
+  .trade-categories h2,
+  .nairobi-trade h2,
+  .trade-process h2,
+  .commercial h2,
+  .trade-closing h2 {
+    font-size: var(--text-title);
+  }
+
+  .trade-intro .content > p,
+  .nairobi-trade .content > p,
+  .trade-process .content > p,
+  .commercial .content > p,
+  .trade-closing .content > p {
+    font-size: var(--font-size-base);
+  }
+
+  .trade-categories .card,
+  .trade-process .step,
+  .commercial-card {
+    padding: var(--space-lg);
+  }
+
+  .trade-categories .data h3,
+  .commercial-card h3 {
+    font-size: var(--font-size-xl);
+  }
+
+  .trade-categories .data p,
+  .trade-process .step p,
+  .commercial-card p {
+    font-size: var(--font-size-sm);
+  }
+
+  .route {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .route .line {
+    width: 100%;
+  }
+
+  .route .line::after {
+    content: "↓";
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    padding: var(--space-xs) 0;
+  }
+}

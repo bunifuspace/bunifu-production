@@ -396,6 +396,9 @@ video {
 .sidebar.active ul li:nth-child(10) {
   transition-delay: 0.32s;
 }
+.sidebar.active ul li:nth-child(11) {
+  transition-delay: 0.35s;
+}
 
 .sidebar ul li a {
   display: flex;

@@ -608,11 +608,11 @@ h4 {
 .art .wrapper {
   padding: var(--space-6) 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .art .wrapper .card {
-  aspect-ratio: 4/3.8;
+  aspect-ratio: 4/3;
   display: flex;
   align-items: flex-end;
 }
@@ -621,6 +621,9 @@ h4 {
   padding: var(--space-1) var(--space-3);
   background: var(--color-white);
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   p {
     color: var(--color-gray-500);
     font-size: var(--font-size-base);
@@ -709,20 +712,22 @@ h4 {
 }
 
 .software .wrapper .card .data {
-  padding: var(--space-1) var(--space-2);
+  padding: var(--space-5) var(--space-2);
   background: var(--color-gray-800);
   width: 100%;
   a {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-lg);
     text-decoration: none;
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
-    font-family: var(--font-hand);
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     i {
       color: var(--color-gray-300);
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-base);
+      color: inherit;
     }
   }
 }
@@ -939,10 +944,10 @@ footer {
     aspect-ratio: 3/4;
   }
   .art .wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .software .wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   footer {

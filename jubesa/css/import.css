@@ -5,7 +5,7 @@
 
 .trade-intro,
 .trade-categories,
-.nairobi-trade,
+.china-trade,
 .trade-process,
 .commercial,
 .trade-closing {
@@ -14,7 +14,7 @@
 
 .trade-intro .content,
 .trade-categories .content,
-.nairobi-trade .content,
+.china-trade .content,
 .trade-process .content,
 .commercial .content,
 .trade-closing .content {
@@ -25,7 +25,7 @@
 
 .trade-intro h2,
 .trade-categories h2,
-.nairobi-trade h2,
+.china-trade h2,
 .trade-process h2,
 .commercial h2,
 .trade-closing h2 {
@@ -37,7 +37,7 @@
 
 .trade-intro h2 span,
 .trade-categories h2 span,
-.nairobi-trade h2 span,
+.china-trade h2 span,
 .trade-process h2 span,
 .commercial h2 span,
 .trade-closing h2 span {
@@ -106,13 +106,13 @@
   font-size: var(--font-size-sm);
 }
 
-.nairobi-trade {
+.china-trade {
   min-height: 80svh;
   display: flex;
   align-items: center;
 }
 
-.nairobi-trade .content > p {
+.china-trade .content > p {
   max-width: 740px;
   margin-top: var(--space-xl);
   color: var(--color-text-secondary);
@@ -294,7 +294,7 @@
 
   .trade-intro,
   .trade-categories,
-  .nairobi-trade,
+  .china-trade,
   .trade-process,
   .commercial,
   .trade-closing {
@@ -313,7 +313,7 @@
 
   .trade-intro h2,
   .trade-categories h2,
-  .nairobi-trade h2,
+  .china-trade h2,
   .trade-process h2,
   .commercial h2,
   .trade-closing h2 {
@@ -321,7 +321,7 @@
   }
 
   .trade-intro .content > p,
-  .nairobi-trade .content > p,
+  .china-trade .content > p,
   .trade-process .content > p,
   .commercial .content > p,
   .trade-closing .content > p {

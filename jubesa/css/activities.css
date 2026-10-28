@@ -56,6 +56,19 @@
   border-radius: 5px;
 }
 
+.eyeblow {
+  margin-bottom: var(--space-md);
+}
+
+.eyeblow p {
+  margin: 0;
+  color: var(--color-green);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .business-intro .content > p:last-child {
   max-width: 740px;
   margin-top: var(--space-xl);
@@ -70,30 +83,60 @@
 
 .activities .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-xs);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-md);
   margin-top: var(--space-2xl);
 }
 
 .activities .card {
-  min-height: 520px;
+  min-width: 0;
+  min-height: 480px;
   padding: var(--space-xl);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid var(--color-border-light);
   border-radius: var(--radius-2xl);
   background: var(--color-bg);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.activities .card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-green);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
 }
 
 .activities .number {
+  margin-bottom: var(--space-2xl);
   color: var(--color-green);
   font-family: var(--font-mono);
   font-size: var(--font-size-sm);
 }
 
+.activities .agriculture .number,
+.activities .resources .number,
+.activities .supply .number,
+.activities .textiles .number,
+.activities .electronics .number,
+.activities .trade .number {
+  color: var(--color-green);
+}
+
+.activities .data {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .activities .data h3 {
+  margin: 0;
   font-size: var(--font-size-2xl);
   font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
 }
 
 .activities .data p {
@@ -104,8 +147,8 @@
 }
 
 .activities .data ul {
-  margin-top: var(--space-lg);
-  padding: 0;
+  margin-top: auto;
+  padding: var(--space-lg) 0 0;
   list-style: none;
 }
 
@@ -114,17 +157,19 @@
   border-top: 1px solid var(--color-border-light);
   color: var(--color-text-secondary);
   font-size: var(--font-size-sm);
+  line-height: var(--leading-relaxed);
 }
 
 .approach .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-xs);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-md);
   margin-top: var(--space-2xl);
 }
 
 .approach .card {
   padding: var(--space-xl);
+  border: 1px solid var(--color-border-light);
   border-radius: var(--radius-lg);
   background: var(--color-bg-secondary);
 }
@@ -163,15 +208,17 @@
 
 .steps {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-xs);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-md);
   margin-top: var(--space-2xl);
 }
 
 .step {
+  min-width: 0;
   padding: var(--space-xl);
-  background: var(--color-bg);
+  border: 1px solid var(--color-border-light);
   border-radius: var(--radius-lg);
+  background: var(--color-bg);
 }
 
 .step h3 {
@@ -203,11 +250,11 @@
 
 @media (max-width: 1000px) {
   .activities .wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .activities .card {
-    min-height: 420px;
+    min-height: 440px;
   }
 
   .approach .wrapper {
@@ -215,17 +262,13 @@
   }
 
   .steps {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 768px) {
   .cover {
     aspect-ratio: 4 / 3;
-  }
-
-  .steps {
-    grid-template-columns: 1fr;
   }
 
   .business-intro,
@@ -235,11 +278,37 @@
   .closing {
     padding-inline: var(--space-sm);
   }
+
+  .activities .wrapper {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .activities .card {
+    min-height: auto;
+  }
+
+  .activities .number {
+    margin-bottom: var(--space-xl);
+  }
+
+  .activities .data ul {
+    margin-top: var(--space-lg);
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .closing {
+    min-height: 65svh;
+  }
 }
 
 @media (max-width: 600px) {
   .cover h1 {
     font-size: var(--text-title);
+    text-align: center;
   }
 
   .business-intro h2,
@@ -248,5 +317,27 @@
   .operations h2,
   .closing h2 {
     font-size: var(--text-title);
+  }
+
+  .business-intro .content > p:last-child,
+  .operations .content > p,
+  .closing .content > p:last-child {
+    font-size: var(--font-size-base);
+  }
+
+  .activities .card,
+  .approach .card,
+  .step {
+    padding: var(--space-lg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .activities .card {
+    transition: none;
+  }
+
+  .activities .card:hover {
+    transform: none;
   }
 }

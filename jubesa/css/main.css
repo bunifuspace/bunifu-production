@@ -237,9 +237,17 @@ video {
   padding-inline: var(--space-md);
 }
 
+.nav .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-6%);
+  margin-right: var(--space-sm);
+}
+
 .nav .brand a {
   color: var(--color-text);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   color: var(--color-text-secondary);
   font-weight: var(--weight-bold);
   letter-spacing: -0.07rem;
@@ -269,6 +277,7 @@ video {
   align-items: center;
   justify-content: center;
   gap: var(--space-md);
+  margin-left: var(--space-md);
 }
 
 .nav .button a {

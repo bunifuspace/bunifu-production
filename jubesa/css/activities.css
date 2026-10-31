@@ -1,21 +1,49 @@
+/* COVER */
+
 .cover {
+  position: relative;
   margin-top: var(--nav-height);
   width: 100%;
+  min-height: 480px;
   aspect-ratio: 1202 / 802;
   max-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../upload/adeolu-eletu-E7RLgUjjazc-unsplash.jpg) center /
-    cover no-repeat;
+  padding: var(--space-xl);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
+    url(../upload/adeolu-eletu-E7RLgUjjazc-unsplash.jpg) center / cover
+      no-repeat;
+  text-align: center;
+}
+
+.cover-content {
+  max-width: 800px;
+}
+
+.cover .eyeblow p {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .cover h1 {
+  margin: var(--space-md) 0;
   font-size: var(--text-title-large);
   font-weight: var(--weight-medium);
+  line-height: var(--leading-tight);
   color: var(--color-white);
   text-shadow: 0 3px 14px rgba(0, 0, 0, 0.55);
 }
+
+.cover-content > p {
+  max-width: 600px;
+  margin: var(--space-md) auto 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: var(--font-size-lg);
+  line-height: var(--leading-relaxed);
+}
+
+/* SECTION LAYOUT */
 
 .business-intro,
 .activities,
@@ -34,6 +62,8 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* SECTION HEADINGS */
 
 .business-intro h2,
 .activities h2,
@@ -54,6 +84,7 @@
   background: #008f5a;
   padding: 0 5px;
   border-radius: 5px;
+  color: var(--color-white);
 }
 
 .eyeblow {
@@ -69,6 +100,8 @@
   text-transform: uppercase;
 }
 
+/* INTRODUCTION */
+
 .business-intro .content > p:last-child {
   max-width: 740px;
   margin-top: var(--space-xl);
@@ -76,6 +109,8 @@
   font-size: var(--font-size-lg);
   line-height: var(--leading-relaxed);
 }
+
+/* BUSINESS ACTIVITIES */
 
 .activities {
   background: var(--color-bg-secondary);
@@ -90,41 +125,58 @@
 
 .activities .card {
   min-width: 0;
-  min-height: 480px;
-  padding: var(--space-xl);
+  padding: var(--space-md);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-2xl);
   background: var(--color-bg);
+  overflow: hidden;
   transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .activities .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   border-color: var(--color-green);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.07);
 }
+
+/* ACTIVITY IMAGES */
+
+.activities .activity-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-secondary);
+}
+
+.activities .activity-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.activities .card:hover .activity-image img {
+  transform: scale(1.045);
+}
+
+/* ACTIVITY NUMBERS */
 
 .activities .number {
-  margin-bottom: var(--space-2xl);
+  margin: var(--space-lg) 0 var(--space-md);
   color: var(--color-green);
   font-family: var(--font-mono);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.06em;
 }
 
-.activities .agriculture .number,
-.activities .resources .number,
-.activities .supply .number,
-.activities .textiles .number,
-.activities .electronics .number,
-.activities .trade .number {
-  color: var(--color-green);
-}
+/* ACTIVITY CONTENT */
 
 .activities .data {
   display: flex;
@@ -147,8 +199,8 @@
 }
 
 .activities .data ul {
-  margin-top: auto;
-  padding: var(--space-lg) 0 0;
+  margin-top: var(--space-lg);
+  padding: 0;
   list-style: none;
 }
 
@@ -159,6 +211,8 @@
   font-size: var(--font-size-sm);
   line-height: var(--leading-relaxed);
 }
+
+/* BUSINESS APPROACH */
 
 .approach .wrapper {
   display: grid;
@@ -172,6 +226,14 @@
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-lg);
   background: var(--color-bg-secondary);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.approach .card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-green);
 }
 
 .approach .card small,
@@ -193,6 +255,8 @@
   font-size: var(--font-size-base);
   line-height: var(--leading-relaxed);
 }
+
+/* OPERATIONS */
 
 .operations {
   background: var(--color-bg-secondary);
@@ -219,6 +283,11 @@
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-lg);
   background: var(--color-bg);
+  transition: border-color 0.25s ease;
+}
+
+.step:hover {
+  border-color: var(--color-green);
 }
 
 .step h3 {
@@ -234,6 +303,8 @@
   line-height: var(--leading-relaxed);
 }
 
+/* CLOSING */
+
 .closing {
   min-height: 80svh;
   display: flex;
@@ -248,13 +319,11 @@
   line-height: var(--leading-relaxed);
 }
 
+/* TABLETS */
+
 @media (max-width: 1000px) {
   .activities .wrapper {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .activities .card {
-    min-height: 440px;
   }
 
   .approach .wrapper {
@@ -266,8 +335,11 @@
   }
 }
 
+/* MOBILE */
+
 @media (max-width: 768px) {
   .cover {
+    min-height: 380px;
     aspect-ratio: 4 / 3;
   }
 
@@ -285,15 +357,19 @@
   }
 
   .activities .card {
-    min-height: auto;
+    padding: var(--space-md);
+  }
+
+  .activities .activity-image {
+    aspect-ratio: 16 / 9;
   }
 
   .activities .number {
-    margin-bottom: var(--space-xl);
+    margin: var(--space-md) 0;
   }
 
   .activities .data ul {
-    margin-top: var(--space-lg);
+    margin-top: var(--space-md);
   }
 
   .steps {
@@ -305,10 +381,16 @@
   }
 }
 
+/* SMALL MOBILE */
+
 @media (max-width: 600px) {
   .cover h1 {
     font-size: var(--text-title);
     text-align: center;
+  }
+
+  .cover-content > p {
+    font-size: var(--font-size-base);
   }
 
   .business-intro h2,
@@ -325,19 +407,32 @@
     font-size: var(--font-size-base);
   }
 
-  .activities .card,
   .approach .card,
   .step {
     padding: var(--space-lg);
   }
+
+  .activities .data h3 {
+    font-size: var(--font-size-xl);
+  }
 }
 
+/* REDUCED MOTION */
+
 @media (prefers-reduced-motion: reduce) {
-  .activities .card {
+  .activities .card,
+  .activities .activity-image img,
+  .approach .card,
+  .step {
     transition: none;
   }
 
-  .activities .card:hover {
+  .activities .card:hover,
+  .approach .card:hover {
+    transform: none;
+  }
+
+  .activities .card:hover .activity-image img {
     transform: none;
   }
 }

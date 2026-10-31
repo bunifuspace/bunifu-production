@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "CampusPocket \u2014 UDOM Student Finance",
+  "short_name": "CampusPocket",
+  "description": "An offline-first student finance, food planning and hydration companion.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f5f7",
+  "theme_color": "#f5f5f7",
+  "icons": [
+    {
+      "src": "./assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
